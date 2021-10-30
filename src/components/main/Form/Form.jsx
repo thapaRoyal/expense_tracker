@@ -21,6 +21,7 @@ const Form = () => {
           ...
         </Typography>
       </Grid>
+
       <Grid item xs={6}>
         <FormControl fullWidth>
           <InputLabel>Type</InputLabel>
@@ -30,6 +31,7 @@ const Form = () => {
           </Select>
         </FormControl>
       </Grid>
+
       <Grid item xs={6}>
         <FormControl fullWidth>
           <InputLabel>Category</InputLabel>
@@ -39,12 +41,14 @@ const Form = () => {
           </Select>
         </FormControl>
       </Grid>
+
       <Grid item xs={6}>
         <TextField type="number" label="Amount" fullWidth />
       </Grid>
       <Grid item xs={6}>
         <TextField type="date" label="date" fullWidth />
       </Grid>
+
       <Button
         className={classes.button}
         variant="outlined"
