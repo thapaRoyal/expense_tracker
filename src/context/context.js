@@ -1,8 +1,8 @@
-import React, { useReducer, creteContext } from 'react';
+import React, { useReducer, createContext } from 'react';
 
 const initialState = [];
 
-const ExpenseTrackerContext = creteContext(initialState);
+export const ExpenseTrackerContext = createContext(initialState);
 
 export const Provider = ({ children }) => {
   return (
