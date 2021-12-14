@@ -59,10 +59,22 @@ const Form = () => {
       </Grid>
 
       <Grid item xs={6}>
-        <TextField type="number" label="Amount" fullWidth />
+        <TextField
+          type="number"
+          label="Amount"
+          fullWidth
+          value={formData.amount}
+          onChange={(e) => setFormData({ ...formData, amount: e.target.value })}
+        />
       </Grid>
       <Grid item xs={6}>
-        <TextField type="date" label="date" fullWidth />
+        <TextField
+          type="date"
+          label="date"
+          fullWidth
+          value={formData.date}
+          onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+        />
       </Grid>
 
       <Button
